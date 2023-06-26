@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">PlantCamera</string>
+
+    <string name="text_ok">OK</string>
+    <string name="text_cancel">Cancel</string>
+
+    <string name="permission_denied_write_storage">Permission not granted.\nPlease allow permission from application settings.</string>
+
+    <string name="title_input_prefix_dialog">Prefix Define</string>
+    <string name="message_input_prefix">Define file prefix manually.\n\nfile name : 20230101_102030_[prefix]_000001\n\nIf prefix is empty, file will be saved without \"_[prefix]\".</string>
+    <string name="text_hint_prefix">prefix</string>
+
+    <string name="message_photo_file_save_complete">File save complete.</string>
+    <string name="message_error_photo_file_save">File save fail.</string>
+</resources>

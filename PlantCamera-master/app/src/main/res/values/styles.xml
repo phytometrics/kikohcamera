@@ -1,0 +1,65 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppThemeSplash" parent="Theme.AppCompat.NoActionBar">
+        <!-- The form background color is transparent -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- The form has no border -->
+        <item name="android:windowFrame">@null</item>
+        <!-- The form does not contain a title bar -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- Window suspension -->
+        <item name="android:windowIsFloating">false</item>
+        <!-- Remove redundant shadows when customizing TitleBar-->
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- Do not allow form background to be dimmed -->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- Disable the preview animation of the window -->
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowNoDisplay">false</item>
+    </style>
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 不透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 背景 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!-- 弹出框动画 由下至上 -->
+    <style name="ActionSheetAnimationStyle" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/dialog_bottom_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_bottom_exit</item>
+    </style>
+
+    <style name="ActionSheetDialogTheme" parent="DialogTheme">
+        <item name="android:windowAnimationStyle">@style/ActionSheetAnimationStyle</item>
+    </style>
+
+</resources>
